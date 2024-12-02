@@ -6,7 +6,7 @@
 ```
 pip install -r requirement.txt
 ```
-[下载模型与打包的dlib](https://pan.baidu.com/s/1SaN1KtfNNlJQWCdctTD-2Q) 提取码: djit 
+release下载 或 [下载模型与打包的dlib](https://pan.baidu.com/s/1SaN1KtfNNlJQWCdctTD-2Q) 提取码: djit 
 
 
 ## 主要流程
