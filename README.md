@@ -14,7 +14,7 @@ release下载 或 [下载模型与打包的dlib](https://pan.baidu.com/s/1SaN1Kt
 ### 预处理
 
 ​	对路径下`./Gallery`照片全部进行识别，筛选出后缀为`"jpg"`，`"png"`的格式照片进行预处理。
-​	用Dlib识别照片中的人脸，使用`./shape_predictor_68_face_landmarks.dat`进行预处理，安装Dlib，可能需要编译安装，安装会相对比较久（提供了zip）。
+​	用Dlib识别照片中的人脸，使用`./shape_predictor_68_face_landmarks.dat`进行预处理，安装Dlib，可能需要编译安装，安装会相对比较久（提供了zip）[可能出现的问题的解法](https://blog.csdn.net/qq_53396586/article/details/124620293)。
 
 ```
 pip install dlib
@@ -71,5 +71,7 @@ python get_features.py
 
 ​    否则AI会对只对照片格式进行裁剪，并且不使用任何模型进行人脸识别，会导致在接下来的向量提取进程中精确度大大减小，导致提取的向量是整张图片的向量，就失去了人脸识别的意义，沦为完全的照片识别。
 
-2. 鸣谢：本次项目中参考了B站`@会AI的哈利波特`up主的源码`./源码资料/第21节：人脸关键点定位/landmark/detect_face_parts.py`与`./源码资料/第21节：人脸关键点定位/landmark/shape_predictor_68_face_landmarks.dat`
+2. 鸣谢：本次项目中参考了B站`@会AI的哈利波特`up主的源码
+   `./源码资料/第21节：人脸关键点定位/landmark/detect_face_parts.py`
+   与`./源码资料/第21节：人脸关键点定位/landmark/shape_predictor_68_face_landmarks.dat`
 
