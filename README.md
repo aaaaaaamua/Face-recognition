@@ -17,7 +17,6 @@ release下载 或 [下载模型与打包的dlib](https://pan.baidu.com/s/1SaN1Kt
 ​	用Dlib识别照片中的人脸，使用`./shape_predictor_68_face_landmarks.dat`进行预处理，安装Dlib，可能需要编译安装，安装会相对比较久（提供了zip）[可能出现的问题的解法](https://blog.csdn.net/qq_53396586/article/details/124620293)。
 ```
 pip install wheel
-pip install
 apt install cmake
 apt-get install libboost-all-dev #安装boost
 ```
