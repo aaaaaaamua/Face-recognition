@@ -15,9 +15,18 @@ release下载 或 [下载模型与打包的dlib](https://pan.baidu.com/s/1SaN1Kt
 
 ​	对路径下`./Gallery`照片全部进行识别，筛选出后缀为`"jpg"`，`"png"`的格式照片进行预处理。
 ​	用Dlib识别照片中的人脸，使用`./shape_predictor_68_face_landmarks.dat`进行预处理，安装Dlib，可能需要编译安装，安装会相对比较久（提供了zip）[可能出现的问题的解法](https://blog.csdn.net/qq_53396586/article/details/124620293)。
-
+```
+pip install wheel
+pip install
+apt install cmake
+apt-get install libboost-all-dev #安装boost
+```
 ```
 pip install dlib
+```
+或者也可以使用已经编译好的版本(成功复现,对cpu和内存占用的影响较小)
+```
+pip install dlib-bin
 ```
 
 ​	本仓库中提供了`extract3.py`与`extract2.py`两个版本，区别并不是很大，`extract2.py`保留了注释，`extract3.py`支持在程序因为内存不足异常中断后跳过对已经处理照片的处理（实际上如果对代码做出改写在读取文件的时候就对文件做出一定的排序，之后就可以直接从预定的切片处开始继续处理，能够极大提升代码性能）。
